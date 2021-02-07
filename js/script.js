@@ -12,6 +12,7 @@ searchBtn.addEventListener('click', (e) => {
                 // console.log(data);
                 if(data.message == 'Not Found') {
                     // Show Alert
+                    ui.showAlert("User Not Found!", "alert alert-danger"); 
                 } else {
                     // Show Profile
                     ui.showProfile(data); 
@@ -19,5 +20,6 @@ searchBtn.addEventListener('click', (e) => {
             })
     } else {
         // Clear Profile
+        ui.clearProfile(); 
     }
 });
